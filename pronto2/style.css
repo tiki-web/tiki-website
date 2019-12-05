@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+body {
+  background-image: url("n8.png");
+  background-color: #222;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+   width: 100vw;
+  height: 100vh;
+ 
+
+  animation: movimiento 15s  infinite linear alternate;
+}
+@keyframes movimiento{
+  from{
+    background-position: bottom left;
+  }
+  to{
+    background-position: top right;
+  }
+}
+
+
+
+.container {
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+
+}
+.container h4 {
+  color: beige;
+  font-weight: normal;
+  font-family: 'Lato', serif;
+  text-align: center;
+}
+
+#mc_embed_signup {
+  background: rgba(119, 104, 79, 0.25);
+  padding: 1em;
+  border-radius: 5px;
+}
+#mc_embed_signup .mc_embed_signup_scroll {
+  display: flex;
+}
+#mc_embed_signup input {
+  background: rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 0.5em;
+  color: #fff;
+}
+
+/*social----------------------------------*/
+.social {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.behance {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.social .link.github {
+  background-color: #677685;
+  color: white;
+}
+
+.social .link.linkedin {
+  background-color: #55769B;
+  color: white;
+}
